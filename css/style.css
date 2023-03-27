@@ -1,0 +1,814 @@
+/*
+    Theme Name: Medilab
+    Theme URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+*/
+*{
+    box-sizing:border-box;
+    scroll-behavior:smooth;        
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 20px;
+	color: #999999;
+	font-size: 300;
+	font-size: 16px;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	color: #222222;
+}
+a, a:hover, a:focus, a:active{
+    outline: none;    
+}
+
+.section-padding{
+	padding: 60px 0px;
+}
+h2 {
+    line-height: 30px;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+hr.botm-line {
+    height: 3px;
+    width: 80px;
+    background:#c5c6c7;
+    position: relative;
+    border: 0;
+    margin: 20px auto 40px auto;    
+}
+.lg-line{
+    padding:20px;
+}
+.background-snow{
+    background-color: snow;
+}
+.background-darkest{
+    background-color:#0b0c10;
+}
+.background-dark{
+    background-color:#1f2833;
+}
+.background-silver{
+    background-color:#c5c6c7;
+}
+.background-aqua{
+    background-color:#66fcf1;
+}
+.background-darkaqua{
+    background-color:#45a29e;
+}
+.background-lightblue{
+    background-color:lightblue;
+}
+.background-grey{
+    background-color:grey;
+}
+.color-lightblue{
+    color:lightblue;
+}
+.color-darkest{
+    color:#0b0c10;
+}
+.color-dark{
+    color:#1f2833;
+}
+.color-silver{
+    color:#c5c6c7;
+}
+.color-aqua{
+    color:#66fcf1;
+}
+.color-darkaqua{
+    color:#45a29e;
+}
+.color-grey{
+    color:grey;
+}
+.color-white{
+    color:white;
+}
+.font-bolder{
+    font-weight:900;
+}
+/***************************************
+slideshow
+***************************************/
+.mySlides {display: none;border:none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  height:100vh;   
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {  
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+.text h1{
+    line-height:70px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:rgba(50,50,50,0.8);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot-active {
+  background-color:rgba(50,50,50,0.15);
+}
+.dot-padding{
+    width:100%;    
+    text-align:center;     
+    bottom:10px;
+    position:absolute;
+    background-color:transparent;    
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/***************************************
+banner
+***************************************/
+.navbar {    
+    margin-bottom: 0px;
+    border: 0px;
+}
+.navbar {
+    border-radius: 0px;
+}
+.navbar-default {
+    background-color: #fff;
+    padding:0;
+    transition:all 0.3s;
+}
+.navbar-default {
+    background: rgba(10,10,10, 0.8);
+    border: 0px;
+}
+.navbar {
+    border-radius: 0px;
+}
+@media (max-width: 1000px) {  
+    .slideshow-container {
+        max-width: 100%;
+        height: 70vh;
+    }
+    .mySlides img{
+        height:70vh;
+    }  
+    .mySlides{
+        padding:0;
+        margin:0;
+    }        
+	.navbar-collapse {
+        overflow-x:hidden;
+        border:none;
+		background: rgba(102, 252, 241,0.3);        
+    }
+    .navbar-default {        
+        padding: 10px 0;
+        margin:0;
+        transition:all 0.3s;
+    }
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+        left:15px;
+    }
+
+    .text{        
+        margin:0;
+        padding:0;        
+    }
+    .text h1{  
+        font-size: 25px;          
+        padding:0px;        
+        margin:0px;
+        line-height:60px;
+    }                    
+
+    .info-sec .amt-logo{        
+        text-align:center;        
+    }
+    .info-sec .amt-logo img{        
+        margin-right:20%;
+    }
+    .quick-info{
+        margin:0;
+        padding:0;
+        text-align:center;        
+    }
+    .info-sec .social-icon{      
+        width:100%;
+        margin-left:35%;                
+    }    
+    .no-padding{
+        margin-top:50px;        
+        text-align:center;
+    }
+    .dot-padding{
+        padding:5px;
+    }
+    .contact-info .subs{
+        margin-top:80px;
+    }
+    
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover,{
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgba(220, 230, 250, 0.51);
+}    
+.navbar-default .navbar-nav > li > a
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+{
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgba(220, 230, 250, 0.31);
+}
+.top-nav-collapse {
+    padding: 0;
+    background: rgba(10,10,10, 0.8);
+}
+.white, .white:hover, .white:focus{
+	color: #fff;
+	width: 100% !important;
+}
+.block{
+	display: block;
+}
+.affix {
+    background-color: #ffffff !important;
+}
+.affix .navbar-nav > li > a:hover, .affix .navbar-nav > li > a:focus
+{
+    background-color: rgba(12, 184, 182) !important;
+}
+.banner-logo img{
+	display: inline-block;
+}
+.banner-text h1{
+	font-family:  'Candal', sans-serif;
+	font-size: 35px;
+    color:white;
+    font-weight:500;
+    padding:15px 0;
+	text-transform: uppercase;	
+    margin:0;
+}
+.text h4{
+    margin-bottom:20vh;
+}
+.btn-appoint{
+    transition-duration:0.3s;
+    margin-top:10vh;
+	padding: 10px 20px;
+	font-size: 15px;
+    font-weight:bold;
+	background-color: rgba(10, 10, 10,0.6);
+    color:rgba(255,255,255,0.8);
+	border-radius: 3px;
+	
+}
+.btn-appoint:hover, .btn-appoint:focus{    
+    background-color: rgba(10, 10, 10,0.95);
+    color:rgba(255,255,255,0.8);
+    transform:scale(1.1,1.1);
+}  
+
+/***************************************
+about us
+***************************************/
+
+#about .btn-appoint{
+    background-color:  rgba(40,120,200,0.9);
+    color:rgba(255,255,255,1);
+    margin:5vh 0 2vh;
+    padding: 10px 20px;
+}
+#about .btn-appoint:hover{
+    background-color:  rgba(40,120,200,1);
+    color:rgba(255,255,255,1);
+}
+.icon i,.icon .i{
+	color: rgba(40,120,200,0.8);
+	font-size: 45px;
+	margin-bottom: 25px;    
+}
+.icon,.icon-info h4{
+    width:100%;
+    text-align: center;
+}
+#more-details{
+    display: none;    
+    background-color:rgba(1,1,1,0.7);    
+    position:fixed;    
+    z-index:10;
+    height:100vh;    
+    width:100%;    
+    padding:0 5vw;
+    box-sizing:border-box;
+    margin:17px 0 0 0;
+    top:33px;
+    left:0;        
+}   
+.more-details a{
+    cursor:pointer;
+    text-decoration:none;
+}
+#details-icon{
+    float:right;
+    cursor:pointer;
+    font-size:30px;
+}
+#details{
+    width:80%;
+    margin:0 auto;
+    padding:15px;
+}
+
+.service-info{
+	margin-bottom: 30px;
+}
+.icon-info h4{
+	padding-bottom: 15px;
+}
+.icon-info p{
+	font-size: 15px !important;
+}
+/***************************************
+registration 
+***************************************/
+.flex-row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.flex-row .section-title a{
+    cursor:pointer;
+    text-decoration:none;    
+}
+#register-title{
+
+}
+#login-title{    
+    display:none;
+}
+#register-form{
+
+}
+#login-form{
+    display:none;
+}
+.radio{
+    width:90%;
+    margin:0 auto 15px;
+    display:flex;
+    flex-direction:row;      
+    padding:15px 0;      
+    font-size:22px;    
+    justify-content:space-around;
+}
+.radio label{
+    color:#0b0c10;
+    transition:all 0.3s;
+}
+.radio label:hover{
+    transform:scale(1.1,1.1);
+}
+.contact-form{
+    width:65%;
+    margin:0 auto;    
+    background-color:lightblue;    
+    padding:50px 0; 
+}
+.contact-form input[type="text"], .contact-form input[type="number"],.contact-form input[type="email"],.contact-form input[type="password"],.contact-form input[list="state"]{
+    width:70%;
+    font-size:22px;
+    padding:10px;
+    margin:0 auto;    
+    transition:all 0.3s;
+}
+.contact-form select{
+    width:70%;
+    font-size:22px;    
+    padding:0 5px;
+    margin:0 auto;    
+}
+.contact-form input:required:hover , .contact-form input:required:focus,.contact-form select:hover,.contact-form select:focus,.contact-from input[list="state"],.contact-form input[list="state"]:focus{
+    box-shadow:0 0 3px 1.5px #45a29e;    
+    border-color:transparent;
+    transform:scale(1.02,1.02);
+}
+.contact-form .form-group{
+    padding-bottom:10px;
+}
+.contact-form .form-btn{    
+    margin:15px auto 0;
+    text-align:center;
+}
+.contact-form button{
+    background-color: rgba(33, 130, 255,0.8);
+    border: none;
+    color: white;
+    padding: 10px 15px;    
+    font-weight: 400;
+    font-size: 2.5rem;              
+    cursor:pointer;
+    transition-duration: 0.3s;
+}
+.contact-form button:hover{    
+    background-color: rgba(33, 130, 255,0.6);
+    transform:scale(1.1,1.1);
+}
+.contact-form .styleless-a{                
+    margin-bottom:10px;  
+    text-align:center;   
+    font-weight:600; 
+    padding:0;       
+}
+.contact-form .styleless-a a{
+    color:rgba(70,100,180,1);
+    text-decoration:none;  
+    cursor:pointer;  
+    transition:all 0.3s;
+}
+.contact-form .styleless-a a:hover{
+    color:rgba(70,100,180,0.6);
+}
+.btm-space{
+    margin-bottom:35px;
+}
+/***************************************
+doctor team
+***************************************/
+.staff-container{
+    position: relative;  
+    border:1px black solid;
+    box-shadow: 0 0 8px 1px black;  
+}
+.staff-container:hover .overlay {
+    opacity: 1;        
+}
+.thumbnail img{
+    display: block;
+    width: 100%;  
+}
+.thumbnail {
+	border-radius: 0px;      
+}
+.overlay{    
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;    
+    text-align: center; 
+    height:100%;           
+    margin:0;
+    padding-top:30%;    
+}
+.overlay h3{
+    color:white;
+}
+.list-inline li a{
+    color:white;
+}
+.list-inline li i:hover{
+    transition:.5s ease;
+    transform: scale(1.3,1.3)
+}
+/***************************************
+Rules & Regulations
+***************************************/
+/**Paper Vesion**/
+.rules-padding{
+    margin:0 8%;
+    padding:0 0 40px 0;
+}
+
+.paper-rules{    
+    padding:5px;   
+    box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.7);     
+}
+.paper-border-right{    
+    border-right:2px solid #45a29e;
+}
+.testi-details {        
+    position: relative;    
+    min-height: 180px;
+}
+
+.testi-details i{
+    margin-left:-35px;
+    margin-right:10px;
+}
+
+
+/**Online Version**/
+.testi-online-info h3 {    
+    line-height: 22px;
+    font-weight: 600;
+    color:lightblue;  
+}
+
+.online-rules{
+    padding:5px;   
+    box-shadow: 0px 0px 5px 3px rgba(200,200,200,0.5); 
+}
+.online-border-right{
+    border-right:2px solid #1f2833;
+}
+/***************************************
+FAQ's
+***************************************/
+.accordion {
+    background-color:rgba(197, 198, 199,0.2);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight:bold;
+    transition: 0.3s;
+    margin:0;
+}
+
+.active, .accordion:hover {
+    background-color:rgba(198, 199, 200,0.8); 
+    transform:scale(1.025,1.025);
+}
+
+.panel {    
+    background-color: snow;
+    max-height: 0;
+    border:none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin:0;
+}
+.panel p{
+    padding: 10px 18px;
+    font-size:17px;
+}
+.toggle-title:hover,.active{
+    background-color:rgba(198, 199, 200,0.8);
+    text-decoration:none;
+    transform:scale(1.025,1.025);
+}
+
+/***************************************
+contact us
+***************************************/
+.profile-min-height{
+    min-height:500px;    
+}
+.space {
+    margin-top: 40px;
+}
+.br-radius-zero {
+    border-radius: 0px;
+}
+.form-control{
+	height: 40px;
+}
+.validation {
+    color: red;
+    display:none;
+    margin: 0 0 20px;
+    font-weight:400;
+    font-size:13px;
+}
+
+#sendmessage {
+    color: green;
+    border:1px solid green;
+    display:none;
+    text-align:center;
+    padding:15px 0;
+    font-weight:600;    
+}
+
+#errormessage {
+    color: red;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+.form-action .btn-appoint{
+    margin:0 0 50px;    
+}
+
+#sendmessage.show, #errormessage.show, .show {
+	display:block;
+}
+#contact .btn-appoint{
+    background-color:rgba(10,10,10,1) ;        
+}
+#contact .btn-appoint:hover{
+    background-color:rgba(10,10,10,0.9) ;        
+}
+
+/***************************************
+footer
+***************************************/
+
+.ftr-tle {
+    height: 50px;
+}
+.white {
+    color: #fff;    
+}
+.quick-info li i {
+    font-size: 8px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: left;    
+}
+.quick-info li a{
+    text-decoration:none;    
+    transition:all 0.3s;
+}
+.quick-info li a:hover{
+    color:#45a29e;
+}
+.social-icon{
+    margin:0;
+    padding:0;    
+}
+.social-icon li{
+    float:left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 8px;    
+    cursor:pointer;
+    transition:all 0.3s;
+}
+.social-icon li:hover{
+    transform:scale(1.1,1.1);
+    border:none;
+}
+.max-width{
+    width:80%;
+}
+.bg-blue {
+    background-color: #1460b8;
+}
+.bgred {
+    background-color: #E74C3C;
+}
+.bgdark-blue {
+    background-color: #315b85;
+}
+.bglight-blue {
+    background-color: #3498DB;
+}
+.top-footer {
+    padding:20px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.info-sec .amt-logo img{
+    width:120px;
+    margin-left:20%;
+    background-color:white;
+    padding:15px;
+}
+.footer-line {
+    padding: 30px 0px;
+    color: #fff;
+}
+
+.footer-line a {
+    color: #0CB8B6;
+}
+
+.quick-info li a{
+    color: #fff;
+}
+.site-link, .site-link:hover, .site-link:focus
+{
+    color: #0cb8b6;
+    text-transform: none;
+    transform:scale(1.1,1.1);
+}
+
+@media (min-width: 220px) and (max-width: 551px){
+    .testi-info{
+        margin-bottom: 20px;
+    }
+    .marb20{
+        margin-top: 30px;
+    }
+    h2{
+        font-size: 24px;
+        line-height: 1.2;
+    }    
+    .medi-info {
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    }
+    .service-info{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .caption h3 {
+    font-size: 14px;
+    }
+    .caption p{
+    font-size: 12px;
+    padding-bottom: 5px;
+    }
+    .caption ul li a i{
+        font-size: 14px;
+    }    
+    .rules-padding{
+        margin:0 ;
+        padding:0;
+        padding-bottom:15px;
+    }    
+    .online-border-right{
+        border-right:none;        
+    }
+    .paper-border-right{
+        border-right:none;              
+    }   
+    #rules-regulations > .rules-padding{
+        background-color:#1f2833;
+    } 
+    h2.color-darkest{
+        color:snow;
+        text-shadow:0px 0px 2px aqua;
+    }
+}
